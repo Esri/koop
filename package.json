@@ -10,7 +10,7 @@
     "prepare": "husky install",
     "commit": "cz",
     "precommit": "lint-staged && npm test --workspaces",
-    "test:e2e": "set SUPPRESS_NO_CONFIG_WARNING=true SUPPRESS_NO_CONFIG_WARNING=true DATA_DIR=./test/provider-data jest ./test/*.spec.js",
+    "test:e2e": "set SUPPRESS_NO_CONFIG_WARNING=true DATA_DIR=./test/provider-data jest ./test/*.spec.js",
     "demo": "node demo/index.js",
     "clean-fork-unit-tests": "shx find ./packages -name '*.spec.js' -delete"
   },
