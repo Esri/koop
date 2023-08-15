@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint \"packages/**/*.js\"",
+    "lint:ci": "eslint \"packages/**/*.js\" --rule linebreak-style:0 ",
     "lint:fix": "eslint \"packages/**/*.js\" --fix",
     "prepare": "husky install",
     "commit": "cz",
