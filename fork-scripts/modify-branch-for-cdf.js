@@ -101,7 +101,7 @@ async function deleteNonEssentialFiles() {
 }
 
 async function copyGithubAction() {
-  return fs.copyFile('fork-scripts/ci-tests.yml', '.github/workflows/ci-tests.yml');
+  return //fs.copyFile('fork-scripts/ci-tests.yml', '.github/workflows/ci-tests.yml');
 }
 
 async function replacePackageReferences() {

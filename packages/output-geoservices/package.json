@@ -1,39 +1,13 @@
 {
-  "name": "@koopjs/output-geoservices",
+  "name": "output-geoservices",
   "version": "7.1.2",
-  "description": "Wraps FeatureServer as a Koop output plugin",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest",
-    "test:cov": "jest --coverage && npm run cov:badge",
-    "cov:badge": "coverage-badges --output ./coverage.svg"
+    "clean": "shx rm -rf ../../customdata/framework/output-geoservices && shx rm package-lock.json",
+    "build": "shx mkdir ../../customdata/framework/output-geoservices && shx cp package.json ../../customdata/framework/output-geoservices && shx cp -r ./src ../../customdata/framework/output-geoservices"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/koopjs/koop.git"
-  },
-  "keywords": [
-    "koop",
-    "featureserver",
-    "plugin",
-    "output",
-    "geoservices"
-  ],
-  "author": "Daniel Fenton <dfenton@esri.com>",
   "license": "Apache-2.0",
-  "files": [
-    "src/**/*.js",
-    "index.d.ts",
-    "!**/*.spec.js"
-  ],
-  "bugs": {
-    "url": "https://github.com/koopjs/koop/issues"
-  },
-  "homepage": "https://github.com/koopjs/koop#readme",
-  "dependencies": {
-    "@koopjs/featureserver": "8.1.2",
-    "@koopjs/logger": "5.0.0"
-  },
+  "dependencies": {},
   "jest": {
     "coverageReporters": [
       "json",
